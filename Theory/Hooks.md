@@ -135,3 +135,32 @@ useEffect → do something after render
 useRef → hold value without re-render
 useContext → share data
 useReducer → complex logic
+
+
+🧾 useId (React Hook) — Quick Notes
+👉 useId is a built-in React hook
+👉 Generates a unique and stable ID
+👉 Used mainly for accessibility (label ↔ input connection)
+🔹 Syntax
+const id = useId();
+🔹 Use Case
+const id = useId();
+
+<label htmlFor={id}>Name</label>
+<input id={id} />
+
+✔ Links label and input properly
+
+🔹 Key Points
+Stable across re-renders
+Unique for each component instance
+Safe for SSR (server-side rendering)
+❌ Don’t Use For
+Keys in lists
+Replacing database IDs
+⚠️ Rules
+Use only inside components/custom hooks
+Not inside loops/conditions
+💡 Final One-Liner
+
+👉 useId = unique, stable ID generator for accessibility in React
