@@ -66,6 +66,14 @@ Destructuring (Best Practice):
 function Greet({ name }) {
   return <h1>Hello {name}</h1>;
 }
+
+👉 Destructuring is a JavaScript syntax to extract values from objects or arrays into variables in a clean, short way.
+
+Example:
+
+const user = { name: "Shubham", age: 21 };
+const { name } = user; // instead of user.name
+
 🔹 Default Props
 
 If no value is passed:
