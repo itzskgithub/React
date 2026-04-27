@@ -51,6 +51,22 @@ const navigate = useNavigate();
 
 navigate("/about");
 
+// How to use navigator in the code
+
+import { useNavigate } from "react-router-dom";
+
+function App() {
+  const navigate = useNavigate();
+
+  return (
+    <button onClick={() => navigate("/about")}>
+      Go to About
+    </button>
+  );
+}
+
+export default App;
+
 👉 Useful after login, form submit, etc.
 
 5. useParams (Dynamic Routing)
